@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 150px;
+  width: 100vw;
+  height: 10vh;
+  margin-top: -10vh;
+}
+i {
+  cursor: pointer;
+  font-size: 20px;
+  text-shadow: 0px 0px 15px #ffcd9b;
+}
+
+.oculto {
+  position: absolute;
+  z-index: -999px;
+  display: none !important;
+}
+#moon {
+  z-index: 999;
+}
+.darkMode {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/background-luxo.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+.whiteMode {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/background-luxo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 150px;
+  border-radius: 5px;
+  border: #fcd78c solid 1px;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 450px;
+  height: 80vh;
+  background-color: rgba(188, 154, 110, 0.8);
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px #6d3600;
+  border-top: #fff6ec49 solid 1px;
+  border-left: #fff6ec11 solid 1px;
+}
+
+.loginDark {
+  background-color: rgba(17, 8, 0, 0.9) !important;
+  box-shadow: 0px 5px 8px #000000 !important;
+  border-top: #1d1002 solid 1px !important;
+  border-left: #1d0f00 solid 1px !important;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1vw;
+  width: 85%;
+}
+
+.inputWhite {
+  padding: 15px;
+  width: 350px;
+  border: none;
+  border-bottom: #673e14 solid 2px;
+  outline: none;
+  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  background-color: #ffffff00;
+  color: #673e14;
+  letter-spacing: 1.5px;
+}
+
+.inputWhite:focus {
+  box-shadow: 0 0 5px #00000055;
+  border: #673e1462 2px solid;
+  border-radius: 5px !important;
+  font-weight: 600;
+  color: #311900;
+  letter-spacing: 1.5px;
+}
+.inputDark {
+  padding: 15px;
+  width: 350px;
+  border: none;
+  border-bottom: #673e14 solid 2px;
+  outline: none;
+  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  background-color: #ffffff00;
+  color: #b68453 !important;
+  letter-spacing: 1.5px;
+}
+
+.inputDark:focus {
+  box-shadow: 0 0 5px #88888855;
+  border: #85624062 2px solid;
+  border-radius: 5px !important;
+  font-weight: 600;
+  color: #b68453 !important;
+  letter-spacing: 1.5px;
+}
+
+.inputWhite::placeholder {
+  color: #311900;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.inputDark::placeholder {
+  color: #b1987d;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+button {
+  background-color: #673e14;
+  border-radius: 3px;
+  border: none;
+  color: antiquewhite;
+  padding: 10px;
+  width: 350px;
+  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 5vh;
+  border: none;
+  letter-spacing: 2px;
+}
+button:hover {
+  box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0.356);
+}
+
+.botaoDark {
+  background-color: #673e14;
+  color: #1d0f00;
+}
+
+.botaoDark:hover {
+  box-shadow: 0px 0px 25px 5px rgba(255, 195, 116, 0.247) !important;
+  font-weight: 900 !important;
+  color: #b68453;
+}
+
+@media (min-width: 347px) and (max-width:1180px){
+  #login {
+  width: 80vw;
+  height: 60vh;
+}
+#header {
+  padding-left: 10vw;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 5vh;
+}
+button {
+  width: 100%;
+}
+.inputWhite {
+  width: 100%;
+}
+.inputDark {
+  width: 100%;
+}
+}
