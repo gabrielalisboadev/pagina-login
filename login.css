@@ -25,8 +25,8 @@ body {
 }
 i {
   cursor: pointer;
-  font-size: 20px;
-  text-shadow: 0px 0px 15px #ffcd9b;
+  font-size: 25px;
+  text-shadow: 0px 0px 15px #ffffffff;
 }
 
 .oculto {
@@ -46,7 +46,7 @@ i {
   width: 100vw;
 }
 .whiteMode {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
     url(/background-luxo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -74,10 +74,10 @@ img {
 }
 
 .loginDark {
-  background-color: rgba(17, 8, 0, 0.9) !important;
-  box-shadow: 0px 5px 8px #000000 !important;
-  border-top: #1d1002 solid 1px !important;
-  border-left: #1d0f00 solid 1px !important;
+  background-color: rgba(29, 14, 0, 0.8) !important;
+  box-shadow: 0px 5px 8px #0000009c !important;
+  border-top: #1d100273 solid 1px !important;
+  border-left: #1d100273 solid 1px !important;
 }
 
 #inputs {
@@ -117,14 +117,14 @@ img {
   padding: 15px;
   width: 350px;
   border: none;
-  border-bottom: #673e14 solid 2px;
+  border-bottom: #fcd78c solid 2px;
   outline: none;
   font-family: "Poiret One", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
   background-color: #ffffff00;
-  color: #b68453 !important;
+  color: fcd78c !important;
   letter-spacing: 1.5px;
 }
 
@@ -132,20 +132,20 @@ img {
   box-shadow: 0 0 5px #88888855;
   border: #85624062 2px solid;
   border-radius: 5px !important;
-  font-weight: 600;
-  color: #b68453 !important;
+  font-weight: 500;
+  color: #FEFAED !important;
   letter-spacing: 1.5px;
 }
 
 .inputWhite::placeholder {
-  color: #311900;
-  font-weight: 500;
+  color: #673E14;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 .inputDark::placeholder {
-  color: #b1987d;
-  font-weight: 500;
+  color: ##FEFAED;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -169,7 +169,7 @@ button:hover {
 }
 
 .botaoDark {
-  background-color: #673e14;
+  background-color: #fcd78c;
   color: #1d0f00;
 }
 
